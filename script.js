@@ -233,3 +233,100 @@ console.log(confact);
 
 
 
+// Break and Continue;
+// Break
+for (let i = 0; i <= 10; i++) {
+    if(i===5){
+        continue;
+    }else if(i===8){
+        break;
+    }
+    let config=i;
+    console.log(config)
+}
+
+
+
+let Arr=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+let texts;
+Arr_list:{
+    texts+= Arr[0]+'<br>';
+    texts+= Arr[1]+'<br>';
+    texts+= Arr[2]+'<br>';
+    texts+= Arr[3]+'<br>';
+    break Arr_list;
+    texts+= Arr[4]+'<br>';
+    texts+= Arr[5]+'<br>';
+    texts+= Arr[6]+'<br>';
+    texts+= Arr[7]+'<br>';
+    texts+= Arr[8]+'<br>';
+    texts+= Arr[9]+'<br>';
+    texts+= Arr[10]+'<br>';
+}
+document.write(texts);
+
+
+
+for(i=1;i<=1000;i++){
+    if(i%2==1){
+        console.log(`This is First Even Number in Range Which i Executed ${i}`)
+        break;
+    };
+};
+for(i=0;i<=10;i++){
+    if(i===5){
+        continue;
+    }
+    console.log(i)
+};
+
+
+// Set
+// new Set()	Creates a new Set
+// add()	Adds a new element to the Set
+// delete()	Removes an element from a Set
+// has()	Returns true if a value exists in the Set
+// forEach()	Invokes a callback for each element in the Set
+// values()	Returns an iterator with all the values in a Set
+
+
+
+// Property	Description
+// size	Returns the number of elements in a Set
+
+
+let S_1 = new Set(['Sandeep Kumar']);
+console.log(S_1);
+
+S_1.add('Frontend Developer');
+S_1.add('Kishanganj');
+S_1.add('Backend Developer');
+S_1.delete('Backend Developer');
+
+let ret = ''; // Initialize ret as an empty string
+
+S_1.forEach((value) => {
+    ret += value+'<br>';
+});
+
+console.log(S_1);
+document.write('Concatenated values:', ret);
+
+
+
+// Values
+let s_2=new Set([9,8,7,6,5,4,3,2,1,0])
+let word='';
+for(let i of s_2.values()){
+    word+=i;
+    console.log(word)
+}
+// new Map()	Creates a new Map
+// set()	Sets the value for a key in a Map
+// get()	Gets the value for a key in a Map
+// delete()	Removes a Map element specified by the key
+// has()	Returns true if a key exists in a Map
+// forEach()	Calls a function for each key/value pair in a Map
+// entries()	Returns an iterator with the [key, value] pairs in a Map
+// Property	Description
+// size	Returns the number of elements in a Map
